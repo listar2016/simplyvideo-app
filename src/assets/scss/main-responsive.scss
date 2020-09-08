@@ -1,0 +1,208 @@
+/*************************************************************
+ Author     : Vivid Motion @ http://vividmotion.co/
+ *************************************************************/
+ @import 'custom';
+
+ @media all and (min-width: 480px) {
+ 
+ }
+ 
+ @media all and (min-width: 576px) {
+ 
+ }
+ 
+ @media all and (min-width: 768px) {
+   $header-padding: 70px;
+   $section-gutter: 4rem;
+   $dashboard-section-gutter: 2rem;
+ 
+   .navbar-expand-md {
+     padding: 0;
+     min-height: 70px;
+   }
+ 
+   .navbar-brand {
+     margin-right: 10px;
+     img {
+       height: 30px;
+     }
+   }
+ 
+   .navbar-nav {
+     align-items: center;
+     .nav-item {
+       margin: 0 0 0 30px;
+     }
+     .nav-item > .nav-link {
+       padding: 0;
+     }
+     .nav-item > .btn {
+       line-height: calc(44px - 20px - 2px);
+       height: 44px;
+       font-size: 17px;
+     }
+   }
+ 
+   .section {
+     padding: $section-gutter 0;
+     > .d-flex {
+       margin: -$section-gutter 0;
+       padding: $section-gutter 0;
+     }
+   }
+ 
+   body {
+     padding-top: $header-padding;
+   }
+ 
+   // Dashboard Start
+ 
+   .page-dashboard .section {
+     padding: $dashboard-section-gutter 0;
+     > .d-flex {
+       margin: -$dashboard-section-gutter 0;
+       padding: $dashboard-section-gutter 0;
+     }
+   }
+ 
+   .page-dashboard .navbar-expand-md {
+     padding: 0 15px 0 10px;
+     min-height: 70px;
+     .container-fluid {
+       padding-left: 15px !important;
+       padding-right: 15px !important;
+     }
+   }
+ 
+   .page-dashboard .navbar-brand {
+     margin-right: 0;
+   }
+ 
+   .page-dashboard .navbar-nav {
+     align-items: center;
+ 
+     margin-left: auto;
+     .nav-item {
+       margin: 0 0 0 1.5rem;
+     }
+     .nav-item > .nav-icon {
+       padding: 0 5px;
+     }
+   }
+ 
+   .page-dashboard .navbar-column:nth-child(1) {
+     width: 230px;
+ 
+     margin-left: -25px;
+     padding-left: 25px;
+   }
+ 
+   .page-dashboard .navbar-column:nth-child(2) {
+     flex: 1;
+ 
+     display: flex;
+ 
+     padding-left: 30px;
+   }
+ 
+   .sidebar {
+     top: $header-padding;
+ 
+     height: calc(100% - #{$header-padding});
+   }
+ 
+   .sidebar-menu {
+     li a:hover .icon {
+       color: $color-primary;
+     }
+   }
+ 
+   .section-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+ 
+   .section-header-action {
+     margin-top: 0;
+   }
+ 
+   .section-panel-header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+ 
+   .section-panel-header-action {
+     margin-top: 0;
+   }
+ 
+   .f-modal-content {
+     padding: 50px;
+   }
+ 
+   // Dashboard End
+ }
+ 
+ @media all and (min-width: 1024px) {
+ 
+ }
+ 
+ @media all and (min-width: 1280px) {
+ 
+ }
+ 
+ @media all and (min-width: 1440px) {
+ 
+ }
+ 
+ @media all and (min-width: 1600px) {
+ 
+ }
+ 
+ @media all and (min-width: 1920px) {
+ 
+ }
+ 
+ @media all and (max-width: 1023px) {
+ 
+ }
+ 
+ @media all and (max-width: 768px) {
+ 
+ }
+ 
+ @media all and (max-width: 767px) {
+   h1 {
+     font-size: 2.4rem;
+     line-height: 1.225;
+   }
+ 
+   h2 {
+     font-size: 2rem;
+   }
+ 
+   h3 {
+     font-size: 1.8rem;
+   }
+ 
+   h4 {
+     font-size: 1.6rem;
+   }
+ 
+   h5 {
+     font-size: 1.4rem;
+   }
+ 
+   h6 {
+     font-size: 1.2rem;
+   }
+ }
+ 
+ @media all and (max-width: 575px) {
+ 
+ }
+ 
+ @media all and (max-width: 320px) {
+ 
+ }

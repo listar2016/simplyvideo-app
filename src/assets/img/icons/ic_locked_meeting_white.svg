@@ -1,0 +1,26 @@
+<svg width="10" height="14" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+
+ <title>A1FC3AD9-B6FE-4E53-84CA-91A29D3AEE44</title>
+ <desc>Created with sketchtool.</desc>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Page-1">
+   <g fill-rule="nonzero" fill="#616166" id="Ongoing-meeting-4---Settings">
+    <g id="Dropdown">
+     <g id="General">
+      <g id="Meeting-type">
+       <g id="Input">
+        <path fill="#ffffff" id="ic_locked_meeting" d="m5,0c1.65685,0 3,1.34315 3,3l0,3l1,0c0.55228,0 1,0.44772 1,1l0,6c0,0.55228 -0.44772,1 -1,1l-8,0c-0.55228,0 -1,-0.44772 -1,-1l0,-6c0,-0.55228 0.44772,-1 1,-1l1,0l0,-3c0,-1.65685 1.34315,-3 3,-3zm4,7l-8,0l0,6l8,0l0,-6zm-4,2c0.55228,0 1,0.44772 1,1c0,0.55228 -0.44772,1 -1,1c-0.55228,0 -1,-0.44772 -1,-1c0,-0.55228 0.44772,-1 1,-1zm0,-8c-1.10457,0 -2,0.89543 -2,2l0,3l4,0l0,-3c0,-1.10457 -0.89543,-2 -2,-2z"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

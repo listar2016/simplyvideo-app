@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>ic_block_user</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-_-Admin-_-User-managment" transform="translate(-1266.000000, -603.000000)" fill="#797980" fill-rule="nonzero">
+            <g id="Content" transform="translate(260.000000, 108.000000)">
+                <g id="Card" transform="translate(0.000000, 316.000000)">
+                    <g id="Table" transform="translate(0.000000, 83.000000)">
+                        <g id="Content" transform="translate(0.000000, 37.000000)">
+                            <g id="Row-2" transform="translate(0.000000, 39.000000)">
+                                <g id="Options" transform="translate(1006.000000, 16.000000)">
+                                    <g id="Option-1">
+                                        <path d="M7,4 C10.8659932,4 14,7.13400675 14,11 C14,14.8659932 10.8659932,18 7,18 C3.13400675,18 0,14.8659932 0,11 C0,7.13400675 3.13400675,4 7,4 Z M2,11 C2,13.7614237 4.23857625,16 7,16 C8.01910722,16 8.96700318,15.6951083 9.75744781,15.1715651 L2.8284349,8.24255219 C2.30489166,9.03299682 2,9.98089278 2,11 Z M7,6 C5.98089278,6 5.03299682,6.30489166 4.24255219,6.8284349 L11.1715651,13.7574478 C11.6951083,12.9670032 12,12.0191072 12,11 C12,8.23857625 9.76142375,6 7,6 Z" id="ic_block_user"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

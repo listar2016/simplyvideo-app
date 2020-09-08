@@ -1,0 +1,172 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px
+);
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: $grid-breakpoints(xs);
+  --breakpoint-sm: $grid-breakpoints(sm);
+  --breakpoint-md: $grid-breakpoints(md);
+  --breakpoint-lg: $grid-breakpoints(lg);
+  --breakpoint-xl: $grid-breakpoints(xl);
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+//GENERAL//
+$header-padding: 61px;
+$section-gutter: 2rem;
+$dashboard-section-gutter: 2rem;
+$container-width: 1170px;
+
+//FONTS//
+
+$font-stack-primary: "Averta", sans-serif;
+$font-size: 17px;
+$dashboard-font-size: 15px;
+$p-line-height: 1.5;
+
+//FONTS//
+
+$bg-body: #F5F5F5;
+$color-primary: #F15F22;
+$color-secondary: #CC2944;
+$color-link: #3372ff;
+$color-gray: #58585A;
+$color-body: #3E3E40;
+$color-dark: #1a1a1a;
+$danger: #CB2944;
+
+//HEADING SIZING
+$h1-font-size: 4rem;
+$h2-font-size: $h1-font-size - $h1-font-size * 20 / 100;
+$h3-font-size: $h2-font-size - $h2-font-size * 20 / 100;
+$h4-font-size: $h3-font-size - $h3-font-size * 20 / 100;
+$h5-font-size: $h4-font-size - $h4-font-size * 25 / 100;
+$h6-font-size: $h5-font-size - $h5-font-size * 25 / 100;
+
+//MIXINS//
+
+@mixin overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin flex-grid($col) {
+  flex: 0 0 calc(100% / #{$col});
+  max-width: calc(100% / #{$col});
+}
+
+@mixin grid($percentage) {
+  flex: 0 0 $percentage;
+  max-width: $percentage;
+}
+
+@mixin flex($col) {
+  flex: 0 0 calc(100% / #{$col});
+}
+
+@mixin svg($desiredWidth, $originalWidth, $originalHeight) {
+  width: $desiredWidth;
+  height: calc(#{$desiredWidth} * #{$originalHeight} / #{$originalWidth});
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: $desiredWidth calc(#{$desiredWidth} * #{$originalHeight} / #{$originalWidth});
+}
+
+@mixin height($desiredWidth, $originalWidth, $originalHeight) {
+  height: calc(#{$desiredWidth} * #{$originalHeight} / #{$originalWidth});
+}
+
+@mixin thumb {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin boxed($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin backgroundSizeW($min-size, $max-size, $min-window-width, $max-window-width) {
+  background-size: calc(#{$min-size} + (#{strip-unit($max-size)} - #{strip-unit($min-size)}) * ((100vw - #{$min-window-width}) / (#{strip-unit($max-window-width)} - #{strip-unit($min-window-width)}))) auto;
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+@function calculateRem($size, $version) {
+  @if ($version == 2) {
+    $remSize: $size / $dashboard-font-size;
+    @return #{$remSize}rem;
+  }
+  @else if ($version == 1) {
+    $remSize: $size / $font-size;
+    @return #{$remSize}rem;
+  }
+}
+
+@mixin pxRem($property, $size, $version) {
+  @if ($version == 2) {
+    #{$property}: $size;
+    #{$property}: calculateRem($size, $version);
+  }
+  @else if ($version == 1) {
+    #{$property}: $size;
+    #{$property}: calculateRem($size, $version);
+  }
+}

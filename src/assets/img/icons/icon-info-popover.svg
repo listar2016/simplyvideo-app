@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>ic_info_popover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-_-Admin-_-Business-branding" transform="translate(-654.000000, -258.000000)" fill="#C8C9CC" fill-rule="nonzero">
+            <g id="Content" transform="translate(260.000000, 108.000000)">
+                <g id="Notification" transform="translate(0.000000, 130.000000)">
+                    <path d="M402,20 C406.418278,20 410,23.581722 410,28 C410,32.418278 406.418278,36 402,36 C397.581722,36 394,32.418278 394,28 C394,23.581722 397.581722,20 402,20 Z M402,27 C401.447715,27 401,27.4477153 401,28 L401,28 L401,32 C401,32.5522847 401.447715,33 402,33 C402.552285,33 403,32.5522847 403,32 L403,32 L403,28 C403,27.4477153 402.552285,27 402,27 Z M402,23 C401.447715,23 401,23.4477153 401,24 C401,24.5522847 401.447715,25 402,25 C402.552285,25 403,24.5522847 403,24 C403,23.4477153 402.552285,23 402,23 Z" id="ic_info_popover"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

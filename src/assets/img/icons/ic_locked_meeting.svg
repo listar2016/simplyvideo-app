@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+    <title>A1FC3AD9-B6FE-4E53-84CA-91A29D3AEE44</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ongoing-meeting-4---Settings" transform="translate(-454.000000, -235.000000)" fill="#616166" fill-rule="nonzero">
+            <g id="Dropdown" transform="translate(420.000000, 100.000000)">
+                <g id="General" transform="translate(20.000000, 24.000000)">
+                    <g id="Meeting-type" transform="translate(0.000000, 73.000000)">
+                        <g id="Input" transform="translate(0.000000, 27.000000)">
+                            <path d="M19,11 C20.6568542,11 22,12.3431458 22,14 L22,17 L23,17 C23.5522847,17 24,17.4477153 24,18 L24,24 C24,24.5522847 23.5522847,25 23,25 L15,25 C14.4477153,25 14,24.5522847 14,24 L14,18 C14,17.4477153 14.4477153,17 15,17 L16,17 L16,14 C16,12.3431458 17.3431458,11 19,11 Z M23,18 L15,18 L15,24 L23,24 L23,18 Z M19,20 C19.5522847,20 20,20.4477153 20,21 C20,21.5522847 19.5522847,22 19,22 C18.4477153,22 18,21.5522847 18,21 C18,20.4477153 18.4477153,20 19,20 Z M19,12 C17.8954305,12 17,12.8954305 17,14 L17,17 L21,17 L21,14 C21,12.8954305 20.1045695,12 19,12 Z" id="ic_locked_meeting"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+@import "fonts";
+@import "all.min";
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "utils";
+
+$fa-font-path: '../fonts/fa';
+@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker";
+
+@import './call/import';
+
+@import './main.scss';
+@import './main-responsive.scss';
+
